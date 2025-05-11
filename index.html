@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health AI Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 AI Mental Health Chatbot</h1>
+    <p>Your mental health companion powered by AI.</p>
+  </header>
+  
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Choose Input Method</h3>
+      <label>
+        <input type="radio" name="input_mode" value="Text" checked> Text
+      </label>
+      <label>
+        <input type="radio" name="input_mode" value="Voice"> Voice
+      </label>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="input-container">
+        <h3>How are you feeling today?</h3>
+        <textarea id="user_input" placeholder="Write your thoughts here..."></textarea>
+        <button id="analyze_button">Analyze</button>
+      </div>
+
+      <div id="emotion_result" class="hidden">
+        <h3>🔍 Detected Emotion:</h3>
+        <p id="emotion"></p>
+
+        <h3>🛠 Coping Strategies:</h3>
+        <ul id="coping_strategies"></ul>
+
+        <h3>👩‍⚕️ Therapist Resources:</h3>
+        <ul id="therapists">
+          <li><a href="https://www.betterhelp.com" target="_blank">BetterHelp</a></li>
+          <li><a href="https://www.talkspace.com" target="_blank">Talkspace</a></li>
+          <li><a href="https://www.7cups.com" target="_blank">7 Cups</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>This tool is not a substitute for professional mental health care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

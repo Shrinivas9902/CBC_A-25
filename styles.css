@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #0056b3;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  color: #0056b3;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 10px;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+}
+
+.content {
+  width: 75%;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003d7a;
+}
+
+/* Emotion Result and Coping Strategies */
+#emotion_result {
+  margin-top: 30px;
+}
+
+#emotion_result ul {
+  list-style-type: none;
+}
+
+#emotion_result li {
+  padding: 5px 0;
+}
+
+#emotion_result a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+#emotion_result a:hover {
+  text-decoration: underline;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}
